@@ -9,7 +9,6 @@ class DAO():
 
         query = """SELECT g.Date 
                         FROM go_daily_sales g"""
-
         cursor.execute(query)
 
         res = ["non scelto"]
@@ -38,7 +37,7 @@ class DAO():
             #                  crediti = row["crediti"],
             #                  nome = row["nome"],
             #                  pd = row["pd"]))
-            res.append(Corso(**row))
+            res.append(**row)
         # processa res
 
         cursor.close()
@@ -58,7 +57,7 @@ class DAO():
 
         res = ["non scelto"]
         for row in cursor:
-            res.append(Corso(**row))
+            res.append(**row)
 
         cursor.close()
         cnx.close()
