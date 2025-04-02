@@ -6,4 +6,3 @@ class ProductDAO:
     unitCost: float
     unitPrice: float
     productType: str
-

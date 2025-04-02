@@ -11,7 +11,7 @@ class Controller:
         self._model = model
 
     def handle_analisi_vendite(self, e):
-
+        #self._model.
         self._view.update_page()
 
     def handle_top_vendite(self, e):
